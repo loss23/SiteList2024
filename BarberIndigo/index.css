@@ -64,6 +64,7 @@ body {
 }
 
 #CreditTitle {
+    transition: 645ms;
     position: relative;
     top: 1vh;
 }
@@ -75,7 +76,7 @@ body {
 }
 
 #CreditTitle:hover {
-    color: rgb(222, 253, 249);
+    color: rgb(21, 114, 201);
 }
 
 #ContactLink:visited {
