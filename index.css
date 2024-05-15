@@ -25,6 +25,10 @@ body {
     transition: 645ms;
     position: relative;
     top: .6vh;
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #TopBar h4 {
@@ -56,16 +60,23 @@ body {
 
     position: relative;
 
-    top: 81.5vh;
+    top: 28vh;
     bottom: 0vh;
+
+    margin-left: auto;
+    margin-right: auto;
 
     width: 100vw;
 }
 
 #CreditTitle {
+    width: fit-content;
     transition: 645ms;
     position: relative;
     top: 1vh;
+
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #ContactLink {
@@ -83,16 +94,19 @@ body {
 }
 
 #ContactLink:hover {
+    cursor: grab;
     color: rgb(222, 253, 249);
 }
 
 #InfoSection {
-    width: 45vw;
+    width: 65vw;
+    height: auto;
+
     margin-left: auto;
     margin-right: auto;
 
     position: relative;
-    top: -2vh;
+    top: 2vh;
 }
 
 #InfoSection h2 {
@@ -107,13 +121,79 @@ body {
 }
 
 #InstagramLink {
+    transition: 645ms;
     position: relative;
     top: -1vh;
     color: white;
+}
+
+#InstagramLink:hover {
+    cursor: grab;
+    color: rgb(75, 0, 214);
+}
+#InstagramLink:hover:visited {
+    cursor: grab;
+    color: rgb(75, 0, 214);
 }
 
 #InstagramLink:visited {
     color: rgb(199, 199, 199);
 }
 
+.Reference{
+    position: relative;
+    display: grid;
+    
+    margin-left: auto;
+    margin-right: auto;
 
+    left: 1vw;
+
+    row-gap: 2.5vh;
+    grid-auto-flow: column;
+
+    top: 5vh;
+}
+.Reference img{
+    pointer-events: none;
+
+    height: auto;
+    width: 25vw;
+
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#BookingButton {
+    transition: 645ms;
+    position: relative;
+
+    top: 15vh;
+
+    background-color: rgb(104, 104, 104);
+    color: white;
+
+    border: none;
+    font-size: 165%;
+
+    width: auto;
+    height: 5vh;
+}
+
+#BookingButton:hover {
+    cursor: grab;
+    font-weight: 300;
+    font-size: 163%;
+    background-color: rgb(51, 51, 51);
+}
+
+#ViewReferences {
+    position: relative;
+
+    margin-left: auto;
+    margin-right: auto;
+    
+    top: 1vh;
+
+    cursor: grab;
+}

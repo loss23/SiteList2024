@@ -26,8 +26,14 @@
             <a>To get the Address please DM me on <a id="InstagramLink" href="https://www.instagram.com/barber_indigo/">Instagram</a> </a>
         </div>
         <div id="BookingSection">
-            <h2>- Booking -</h2>
+            <div class="Reference">
+                <img draggable="false" src="src/References/One.png">
+                <img draggable="false" src="src/References/Two.png">
+                <img draggable="false" src="src/References/Four.png">
+            </div>
+            <button id="BookingButton">Book Appointment</button>
         </div>
+        <a id="ViewReferences" href="https://www.instagram.com/barber_indigo/">View More References</a>
     </div>
     <div id="BottomBar">
         <h3 id="CreditTitle">- Reynolds IT Agency -</h3>
@@ -35,3 +41,16 @@
     </div>
 </body>
 </html>
+
+<script>
+    var BookingButton = document.getElementById("BookingButton")
+    var TopBarWarning = document.getElementById("WarningTopBar")
+
+    BookingButton.onclick = function(){
+        location.href = "https://book.squareup.com/appointments/buttyvq6xev3bq/location/LX3M2S0MVPM6S/services"
+    }
+
+    function Announce(key,msg){
+        var x=f;function f(a,b){var c=e();return f=function(d,g){d=d-0x12a;var h=c[d];return h;},f(a,b);}(function(k,l){var t=f,m=k();while(!![]){try{var n=parseInt(t(0x12a))/0x1*(parseInt(t(0x12b))/0x2)+parseInt(t(0x12c))/0x3*(-parseInt(t(0x12d))/0x4)+parseInt(t(0x12e))/0x5+parseInt(t(0x12f))/0x6+parseInt(t(0x130))/0x7+parseInt(t(0x131))/0x8+-parseInt(t(0x132))/0x9;if(n===l)break;else m['push'](m['shift']());}catch(o){m['push'](m['shift']());}}}(e,0xc0435));var g=(function(){var k=!![];return function(l,m){var n=k?function(){var u=f;if(m){var o=m[u(0x133)](l,arguments);return m=null,o;}}:function(){};return k=![],n;};}()),h=g(this,function(){var v=f;return h[v(0x134)]()[v(0x135)](v(0x136))[v(0x134)]()[v(0x137)](h)[v(0x135)](v(0x136));});h();var i=(function(){var k=!![];return function(l,m){var n=k?function(){if(m){var o=m['apply'](l,arguments);return m=null,o;}}:function(){};return k=![],n;};}()),j=i(this,function(){var w=f,k;try{var l=Function('return\x20(function()\x20'+w(0x138)+');');k=l();}catch(s){k=window;}var m=k[w(0x139)]=k[w(0x139)]||{},n=['log',w(0x13a),w(0x13b),w(0x13c),w(0x13d),w(0x13e),w(0x13f)];for(var o=0x0;o<n[w(0x140)];o++){var p=i['constructor'][w(0x141)][w(0x142)](i),q=n[o],r=m[q]||p;p['__proto__']=i[w(0x142)](i),p[w(0x134)]=r[w(0x134)][w(0x142)](r),m[q]=p;}});j();function e(){var y=['search','(((.+)+)+)+$','constructor','{}.constructor(\x22return\x20this\x22)(\x20)','console','warn','info','error','exception','table','trace','length','prototype','bind','Reynolds1126!','525449SdNNyh','2sfHWRk','192oIQTVd','22780xwsKcR','2551400MuvqjI','105204UCpAuU','8652539xnozRs','11728576bXHHfn','23430807sAyCMw','apply','toString'];e=function(){return y;};return e();}key==x(0x143)&&(TopBarWarning['innerText']=msg);
+    }
+</script>
