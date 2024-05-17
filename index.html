@@ -31,9 +31,9 @@
         </div>
         <div id="BookingSection">
             <div class="Reference">
-                <img draggable="false" src="src/References/One.png">
-                <img draggable="false" src="src/References/Two.png">
-                <img draggable="false" src="src/References/Four.png">
+                <img class="rimg" draggable="false" src="src/References/One.png">
+                <img class="rimg" draggable="false" src="src/References/Two.png">
+                <img class="rimg" draggable="false" src="src/References/Four.png">
             </div>
             <button id="BookingButton">Book Appointment</button>
         </div>
@@ -57,6 +57,8 @@
     let Blacklist = document.cookie
 
     window.onload = function () {
+        var refImages = document.getElementsByClassName("rimg")
+
         if (localStorage.getItem("blacklist") == "true") {
             TopBarWarning.innerText = "You are blacklisted from this site. Please contact site admin."
             BookingLink = "#"
