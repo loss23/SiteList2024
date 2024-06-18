@@ -15,10 +15,6 @@
         <h4>- Clean, Affordable, Quality -</h4>
     </div>
 
-    <div id="HighlightBar">
-        <h3 id="WarningTopBar"></h3>
-    </div>
-
     <div class="MidSection">
         <div id="InfoSection">
             <h2>- Information -</h2>
@@ -26,8 +22,7 @@
                 Decatur, Al, and I have both Instagram and Snapchat.
                 <br>
                 <br>
-                <a>To get the Address please DM me on <a id="InstagramLink"
-                        href="https://www.instagram.com/barber_indigo/">Instagram</a> </a>
+                <a>To get the Address please DM me on <a id="InstagramLink" href="https://www.instagram.com/barber_indigo/">Instagram</a> </a>
         </div>
         <div id="BookingSection">
             <div class="Reference">
@@ -50,40 +45,10 @@
 
 <script>
     var BookingButton = document.getElementById("BookingButton")
-    var TopBarWarning = document.getElementById("WarningTopBar")
-
-    var BookingLink = "https://book.squareup.com/appointments/buttyvq6xev3bq/location/LX3M2S0MVPM6S/services"
-
-    let Blacklist = document.cookie
-
-    window.onload = function () {
-        var refImages = document.getElementsByClassName("rimg")
-
-        if (localStorage.getItem("blacklist") == "true") {
-            TopBarWarning.innerText = "You are blacklisted from this site. Please contact site admin."
-            BookingLink = "#"
-            document.body.style.overflow = "hidden"
-            TopBarWarning.style.height = "100vh"
-        }
-    }
-
-    window.onmousemove = function() {
-        if (localStorage.getItem("blacklist") == "false") {
-            localStorage.setItem("blacklist", true)
-        }
-    }
+    var BookingLink = "https://barberindigo.booksy.com"
 
     BookingButton.onclick = function () {
         location.href = BookingLink
-    }
-
-    function Announce(key, msg) {
-        if (key == "Reynolds1126!") {
-            TopBarWarning.innerText = msg
-        } else {
-            localStorage.setItem("blacklist", "true")
-            location.reload()
-        }
     }
 
 </script>
